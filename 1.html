@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政务服务快捷入口</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航栏 */
+        .top-nav {
+            width: 100%;
+            height: 60px;
+            background-color: #0052cc;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .top-nav h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            background-color: #003da6;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #002d80;
+        }
+
+        /* 主体内容区 */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            font-size: 1.3rem;
+            color: #0052cc;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0052cc;
+        }
+
+        /* 电脑端网格布局 */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .link-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .link-card a {
+            text-decoration: none;
+            color: #0052cc;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .link-card p {
+            color: #666;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* 手机端列表布局 */
+        @media (max-width: 768px) {
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+            .link-card {
+                padding: 15px;
+            }
+            .top-nav h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* 底部信息 */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="top-nav">
+        <h1>政务服务快捷入口</h1>
+        <a href="#" class="back-btn">返回首页</a> <!-- 此处#替换为你的主网站首页链接 -->
+    </div>
+
+    <!-- 主体内容区 -->
+    <div class="container">
+        <!-- 国家政务分类 -->
+        <div class="category">
+            <h2>国家政务网站</h2>
+            <div class="link-grid">
+                <div class="link-card">
+                    <a href="https://www.gov.cn" target="_blank">中国政府网</a>
+                    <p>国务院官方门户网站，提供政策发布、政务公开、便民服务等权威信息</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://gjzwfw.www.gov.cn" target="_blank">国家政务服务平台</a>
+                    <p>整合全国政务服务资源，提供“一网通办”服务入口</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://www.npc.gov.cn" target="_blank">全国人民代表大会</a>
+                    <p>全国人大及其常委会官方网站，发布法律、决议等重要内容</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 地方政务分类 -->
+        <div class="category">
+            <h2>地方政务网站</h2>
+            <div class="link-grid">
+                <div class="link-card">
+                    <a href="https://www.beijing.gov.cn" target="_blank">北京市人民政府</a>
+                    <p>北京市政府官方网站，提供本地政策、政务服务、城市动态等</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://www.shanghai.gov.cn" target="_blank">上海市人民政府</a>
+                    <p>上海市政府官方门户网站，涵盖政务公开、服务、互动等板块</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://www.gd.gov.cn" target="_blank">广东省人民政府</a>
+                    <p>广东省政府官方网站，提供省内政务信息及便民服务</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 专项服务分类 -->
+        <div class="category">
+            <h2>专项政务服务</h2>
+            <div class="link-grid">
+                <div class="link-card">
+                    <a href="https://www.moe.gov.cn" target="_blank">教育部官网</a>
+                    <p>教育部官方网站，发布教育政策、招生考试、教育统计等信息</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://www.mohrss.gov.cn" target="_blank">人力资源和社会保障部</a>
+                    <p>提供社保、就业、人才政策等服务，含社保查询、招聘信息等</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://www.most.gov.cn" target="_blank">科学技术部</a>
+                    <p>发布科技政策、科研项目、科技成果等权威内容</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息区 -->
+    <div class="footer">
+        <p>本页面链接均为官方政务网站，点击后将跳转至外部站点 | 支持电脑、手机等设备浏览</p>
+    </div>
+</body>
+</html>

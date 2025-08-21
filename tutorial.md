@@ -46,7 +46,6 @@ cd /storage/emulated/0/
 wget https://github.com/HT-DJ/htdjsq/raw/5ffec1ed2243967ec16d261ae07fd6f79b5c3c83/%E6%96%87%E4%BB%B6/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%BD%91%E6%98%93%E5%AD%98%E6%A1%A3%E8%A7%A3%E5%AF%86.zip
 ~~~
 
-
 解压
 ~~~termux
 unzip "我的世界网易存档解密.zip"

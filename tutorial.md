@@ -55,10 +55,10 @@ unzip "我的世界网易存档解密.zip"
 运行
 ***第一次会先安装Java***
 ~~~termux
-/storage/emulated/0/NeteaseMcDencrypter/htdjsq.py
+python /storage/emulated/0/NeteaseMcDencrypter/htdjsq.py
 ~~~
 
 以后使用运行运行这个就行了
 ~~~python
-/storage/emulated/0/NeteaseMcDencrypter/htdjsq.py
+python /storage/emulated/0/NeteaseMcDencrypter/htdjsq.py
 ~~~

@@ -1,1 +1,0 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/HT-DJ/htdjsq/81befb88d878cce64f7ca2fbf96041fd2c7beecd/%E6%96%87%E4%BB%B6/Script/HTDJ/roblox%E8%84%9A%E6%9C%AC.lua'))()

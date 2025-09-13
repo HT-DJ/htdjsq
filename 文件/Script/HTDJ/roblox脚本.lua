@@ -22,7 +22,7 @@ repeat wait() until Confirmed
 
 --
 local Window = WindUI:CreateWindow({
-    Title = "Lightsmoke_Hub",
+    Title = "OmniPlay_Hub",
     Icon = "rbxassetid://129260712070622",
     IconThemed = true,
     Author = "DJ",

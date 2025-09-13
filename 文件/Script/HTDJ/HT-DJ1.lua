@@ -2,7 +2,14 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/user
 
 local Window = OrionLib:MakeWindow({Name = "HT-DJ", HidePremium = false, SaveConfig = true,IntroText = "HT-DJ", ConfigFolder = "HT-DJ"})
 
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "HT-DJ"; Text ="HT-DJ"; Duration = 5; })
+OrionLib:MakeNotification({
+            Name = "弹窗提示",
+            Content = "欢迎使用HT-DJ脚本",
+            Image = "rbxassetid://13519683179",
+            Time = 3
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "公告"; Text ="null"; Duration = 5; })
 
 local about = Window:MakeTab({
     Name = "所有者HT-DJ",

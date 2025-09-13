@@ -122,7 +122,7 @@ Tabs.Script:Button({
     Desc = "我的另一个脚本",
     Callback = function()
         getgenv().LS="HT-DJ" 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HT-DJ/htdjsq/e14f3c13860eb4f08196c61f233a88a2a2036501/%E6%96%87%E4%BB%B6/Script/RobloxHT-DJUI1.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HT-DJ/htdjsq/main/%E6%96%87%E4%BB%B6/Script/HTDJ/HT-DJ1.lua"))()
     end
 })
 
